@@ -2,94 +2,13 @@
 /*! General Styles  */
 /********************/
 
-/* make images flexible */
-img {
-  height: auto;
-  width: 100%;
-  max-width: 100%;
-}
-
 /*******************/
 /*! Helper Styles  */
 /*******************/
 
 /* hide content visually but still
 make available for screen readers */
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-}
 
 /*******************/
 /*! Layout Styles  */
 /*******************/
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-/* center in the browser window */
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 91.25%;
-  max-width: 71.25em;
-}
-
-/* if grid is *not* supported, do this: */
-@media (min-width: 30em) {
-  .grid-item {
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    width: 49%;
-  }
-}
-
-@media (min-width: 40em) {
-  .grid-item {
-    width: 32%;
-  }
-}
-
-/* if grid is supported, do this: */
-@supports (display: grid) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-column-gap: 2rem;
-    grid-row-gap: 3rem;
-  }
-
-  /* reset default styles from above */
-  .grid-item {
-    vertical-align: initial;
-    margin: 0;
-    padding: 0;
-    width: auto;
-  }
-}
