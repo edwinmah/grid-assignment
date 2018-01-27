@@ -1,3 +1,14 @@
+/********************/
+/*! General Styles  */
+/********************/
+
+/* make images flexible */
+img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
 /*******************/
 /*! Helper Styles  */
 /*******************/
@@ -25,16 +36,9 @@ make available for screen readers */
   width: auto;
 }
 
-/* make images flexible */
-img {
-  height: auto;
-  width: 100%;
-  max-width: 100%;
-}
-
-/**
- * Layout Styles
- */
+/*******************/
+/*! Layout Styles  */
+/*******************/
 
 html {
   box-sizing: border-box;
