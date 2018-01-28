@@ -1,8 +1,11 @@
 /********************/
+
 /*! General Styles  */
+
 /********************/
 
 /* make images flexible */
+
 img {
   height: auto;
   width: 100%;
@@ -10,11 +13,14 @@ img {
 }
 
 /*******************/
+
 /*! Helper Styles  */
+
 /*******************/
 
 /* hide content visually but still
 make available for screen readers */
+
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -37,7 +43,9 @@ make available for screen readers */
 }
 
 /*******************/
+
 /*! Layout Styles  */
+
 /*******************/
 
 html {
@@ -51,14 +59,16 @@ html {
 }
 
 /* center in the browser window */
+
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 91.25%;
-  max-width: 71.25em;
+  max-width: 71.25rem;
 }
 
 /* if grid is *not* supported, do this: */
+
 @media (min-width: 30em) {
   .grid-item {
     display: inline-block;
@@ -77,6 +87,7 @@ html {
 }
 
 /* if grid is supported, do this: */
+
 @supports (display: grid) {
   .grid {
     display: grid;
@@ -84,7 +95,6 @@ html {
     grid-column-gap: 2rem;
     grid-row-gap: 3rem;
   }
-
   /* reset default styles from above */
   .grid-item {
     vertical-align: initial;
