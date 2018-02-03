@@ -73,16 +73,17 @@ html {
   .grid-item {
     display: inline-block;
     vertical-align: top;
+    margin-right: -0.25rem;
     margin-bottom: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    width: 49%;
+    width: 50%;
   }
 }
 
 @media (min-width: 40em) {
   .grid-item {
-    width: 32%;
+    width: 33.33%;
   }
 }
 
